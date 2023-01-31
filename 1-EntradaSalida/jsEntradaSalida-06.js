@@ -32,15 +32,15 @@ function sumar()
 
 	alert("la suma es " + resultado)*/
 
-	let a
-	let b
-	let c
+	let num1
+	let num2
+	let num3
 
-	a = parseInt(document.getElementById("txtIdNumeroUno").value)
-	b = parseInt(document.getElementById("txtIdNumeroDos").value)
+	num1 = parseInt(document.getElementById("txtIdNumeroUno").value)
+	num2 = parseInt(document.getElementById("txtIdNumeroDos").value)
 
-	c = a + b
+	num3 = num1 + num2
 
-	alert("la suma es un total de " + c)
+	alert("la suma es un total de " + num3)
 }
 
