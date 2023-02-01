@@ -22,8 +22,11 @@ function FahrenheitCentigrados ()
        //Celsius a Fahrenheit, simplemente multiplica por 1.8 (o 9/5) y suma 32.
        let fah;
        let cent;
+       
        cent = parseInt(document.getElementById("txtIdTemperatura").value);
+       
        fah = cent * 1.8 + 32
+       
        alert(cent + " grados centígrados son " + fah + " grados Fahrenheit")
       
 }

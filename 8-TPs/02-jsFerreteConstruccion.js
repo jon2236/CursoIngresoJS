@@ -43,4 +43,23 @@ function Circulo ()
 function Materiales () 
 {
 	
+    let largo
+    let ancho
+    let area
+    let cemento
+    let cal
+
+    largo = parseFloat(document.getElementById("txtIdLargo").value)
+    ancho = parseFloat(document.getElementById("txtIdAncho").value)
+
+    area = largo * ancho
+
+    cemento = area * 2
+    cal = area * 3
+
+    alert("la cantidad necesaria de bolsas de cemento es de " + cemento + " unidades y, ademas necesitara " + cal + " bolsas de cal para los " + area + " m2 de area indicados")
+
+
+
+
 }
