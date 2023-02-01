@@ -27,8 +27,8 @@ function mostrarAumento()
 
 	aumento = sueldo * 10 / 100;
 
-	nuevosueldo = sueldo + aumento
+	nuevosueldo = sueldo + aumento;
 
-	document.getElementById("txtIdResultado").value = nuevosueldo
+	document.getElementById("txtIdResultado").value = nuevosueldo;
 
 }

@@ -25,9 +25,9 @@ function FahrenheitCentigrados ()
        
        cent = parseInt(document.getElementById("txtIdTemperatura").value);
        
-       fah = cent * 1.8 + 32
+       fah = cent * 1.8 + 32;
        
-       alert(cent + " grados centígrados son " + fah + " grados Fahrenheit")
+       alert(cent + " grados centígrados son " + fah + " grados Fahrenheit");
       
 }
 
