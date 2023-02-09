@@ -17,22 +17,20 @@ function CalcularPrecio ()
     let descuento;
     let precioBruto;
     let proporcion
+    const IIBB = 10
+    let mensaje
 
     cantLampa = parseInt(document.getElementById("txtIdCantidad").value);
     marca = document.getElementById("Marca").value;
     descuento = 0
-    
-    precioBruto = cantLampa * PRECIO_LAMPA;
-    proporcion = (precioBruto * descuento) / 100;
-    precioDescuento = precioBruto - proporcion;
-    
+    mensaje = "adquirio " + cantLampa + " de la marca " + marca + " y obtuve un descuento de "
 
     
 
     if(cantLampa > 5)
     {
         descuento = 50;
-        alert ("su precio con descuento es " + precioDescuento);
+        
     }
     else 
     {
@@ -86,10 +84,26 @@ function CalcularPrecio ()
                     }
 
                 }
-            }
-        }    
             
+            }
+
+        }    
+         
     }       
+    mensaje = mensaje + descuento + "%";
+    precioBruto = cantLampa * PRECIO_LAMPA;
+    proporcion = (precioBruto * descuento) / 100;
+    precioDescuento = precioBruto - proporcion;
+    
+    if (precioDescuento > 120)
+    {
+        proporcion = (precioDescuento * IIBB) / 100
+        precioDescuento = precioDescuento + IIBB
+        mensaje = mensaje + " con impuestos afip da un total de "
+    }
+
+    alert (mensaje)
+    alert (precioDescuento)
         
 }
 
