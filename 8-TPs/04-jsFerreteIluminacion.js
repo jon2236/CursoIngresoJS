@@ -22,9 +22,7 @@ function CalcularPrecio ()
     marca = document.getElementById("Marca").value;
     descuento = 0
     
-    precioBruto = cantLampa * PRECIO_LAMPA;
-    proporcion = (precioBruto * descuento) / 100;
-    precioDescuento = precioBruto - proporcion;
+    
     
 
     
@@ -32,7 +30,7 @@ function CalcularPrecio ()
     if(cantLampa > 5)
     {
         descuento = 50;
-        alert ("su precio con descuento es " + precioDescuento);
+       
     }
     else 
     {
@@ -89,7 +87,13 @@ function CalcularPrecio ()
             }
         }    
             
-    }       
+    }   
+    
+    precioBruto = cantLampa * PRECIO_LAMPA;
+    proporcion = (precioBruto * descuento) / 100;
+    precioDescuento = precioBruto - proporcion;
+
+    alert ("su precio con descuento es " + precioDescuento);
         
 }
 
