@@ -14,17 +14,17 @@ function mostrar()
 		case "Mayo":
 		case "Junio":
 		
-		alert("falta para el invierno")
+		alert("falta para el invierno");
 			break;		
 		
 		case "Julio":
 		case "Agosto":
-		alert("abrigate q hace ofri")
+		alert("abrigate q hace ofri");
 			break;
 	
 		default:
 			
-		alert("ahora calor")
+		alert("ahora calor");
 			break;
 	}
 
