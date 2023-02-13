@@ -23,8 +23,7 @@ function CalcularPrecio ()
     cantLampa = parseInt(document.getElementById("txtIdCantidad").value);
     marca = document.getElementById("Marca").value;
     descuento = 0
-    mensaje = "adquirio " + cantLampa + " de la marca " + marca + " y obtuve un descuento de "
-
+    
     
 
     if(cantLampa > 5)
@@ -89,7 +88,9 @@ function CalcularPrecio ()
 
         }    
          
-    }       
+    } 
+    mensaje = "adquirio " + cantLampa + " unidades de la marca " + marca + " y obtuve un descuento del "
+      
     mensaje = mensaje + descuento + "%";
     precioBruto = cantLampa * PRECIO_LAMPA;
     proporcion = (precioBruto * descuento) / 100;
@@ -103,7 +104,7 @@ function CalcularPrecio ()
     }
 
     alert (mensaje)
-    alert (precioDescuento)
+    alert ("precio final de " + precioDescuento)
         
 }
 
