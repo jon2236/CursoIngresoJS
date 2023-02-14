@@ -1,4 +1,5 @@
-//78*function mostrar()
+//78*
+function mostrar()
 {
 	let destino;
 	let estacion;
@@ -66,6 +67,85 @@
 	
 	alert ("Precio final de " + precioFinal);
 }//FIN DE LA FUNCIÓN7
+
+
+
+/*let estacion;
+  let destino;
+  const PRECIO_BASE = 15000;
+  let precioFinal;
+  let proporcion;
+  let porcentaje;
+
+  estacion = document.getElementById("txtIdEstacion").value;
+  destino = document.getElementById("txtIdDestino").value;
+
+  switch (estacion) {
+    case "Invierno":
+      switch (destino) {
+        case "Bariloche":
+          porcentaje = 20;
+
+          break;
+
+        case "Mar del plata":
+          porcentaje = -20;
+          break;
+
+        default:
+          porcentaje = -10;
+
+          break;
+      }
+
+      break;
+
+    case "Verano":
+      switch (destino) {
+        case "Bariloche":
+          porcentaje = -20;
+          break;
+
+        case "Mar del plata":
+          porcentaje = 20;
+          break;
+
+        default:
+          porcentaje = 10;
+          break;
+      }
+
+      break;
+
+    default:
+      switch (destino) {
+        case "Cordoba":
+          porcentaje = 0;
+          break;
+
+        default:
+          porcentaje = 10;
+
+          break;
+      }
+      break;
+  }
+
+  proporcion = (PRECIO_BASE * porcentaje) / 100;
+  precioFinal = PRECIO_BASE + proporcion;
+  alert(precioFinal);*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*switch (destino) 
