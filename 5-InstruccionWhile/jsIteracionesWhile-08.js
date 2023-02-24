@@ -1,6 +1,6 @@
 /*
 Al presionar el botón pedir  números  hasta que el usuario quiera,
-sumar los que son positivos y multiplicar los negativos.*/
+sumar los que son positivos y multiplicar los negativos.
 function mostrar()
 {
 	let numeroIngresado;
@@ -25,6 +25,39 @@ function mostrar()
 		document.getElementById("txtIdProducto").value = "el producto es " + producto;
 	}
 	
+	
+	
+}//FIN DE LA FUNCIÓN*/
+
+/*
+Al presionar el botón pedir  números  hasta que el usuario quiera,
+sumar los que son positivos y multiplicar los negativos.*/
+function mostrar()
+{
+	let numeroIngresado;
+	let sumatotal = 0;
+	let producto = 1;
+	let pregunta;
+
+
+	do {
+		numeroIngresado = parseInt(prompt("ingrese un numero"));
+
+		if (numeroIngresado >= 0) {
+			sumatotal = sumatotal + numeroIngresado;
+		}
+		else{
+			producto = numeroIngresado * producto;
+		}
+		pregunta = confirm ("desea seguir ingresando numeros?");
+	}
+	while (pregunta == true);
+
+	
+	document.getElementById("txtIdSuma").value = "la suma total es " + sumatotal;
+	document.getElementById("txtIdProducto").value = "el producto es " + producto;
+
+
 	
 	
 }//FIN DE LA FUNCIÓN
