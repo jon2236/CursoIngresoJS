@@ -229,4 +229,10 @@ function mostrar()
 	mensaje = mensaje + descuento || aumento;
 	proporcion = ESTADIA * descuento || aumento / 100;
 	precioFinal = ESTADIA + descuento || aumento;
+
+
+(edadCliente > 100 || edadCliente < 8) {
+			alert ("su rango de edad debe estar entre 8 y 100 años");
+	edadCliente < 12) {
+			descuento = PRECIOBASE * 20 / 100;
 */	
